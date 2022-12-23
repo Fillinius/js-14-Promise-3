@@ -33,7 +33,7 @@ const getFastestLoadedPhoto = (ids)=>{
   .then((user)=>{
     console.log('user', user)
     
-    const userHTML = createUserElement(user.title)
+    const userHTML = createUserElement(user.title, user.url)
     dataContainer.append(userHTML)
   
   })
